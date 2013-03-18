@@ -1,0 +1,214 @@
+ @font-face 
+ {
+ 	font-family: 'Strait';
+ 	src: url('../font/Strait-Regular.ttf');
+ }
+
+
+html { font-size: 62.5%; } 
+
+
+ body 
+ {
+ 	background: #000;
+ 	font-family: 'Strait', sans-serif;
+
+ }
+
+
+ /* Header */
+
+
+ header 
+ {
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	font-style: normal;
+ }
+ header a 
+ {
+ 	color: #FFF;
+ 	text-decoration: none;
+ }
+ header h1
+ {
+ 	font-family: 'Strait', sans-serif;
+ 	margin-bottom: 10px;
+ 	margin-left: -10px;
+ 	font-size: 12px;
+ 	font-size: 1.2rem;
+ 	padding-top: 5px;
+}
+
+.grid-25.hide-on-desktop
+ {
+ 	padding-top: -10px;
+ 	margin-left:-12px;
+ 	padding-bottom: 10px;
+ 	text-align:left;
+ 		
+}
+
+.grid-25.hide-on-mobile
+ {
+ 	padding-top: 4px;
+ 	margin-right:0px;	
+ 	text-align: right;
+	}
+
+input.search 
+ {
+ 	border:none;
+ 	background-color: #FFF;
+ }
+
+ input.submit 
+ {
+ 	background-color: #FFF;
+ 	border:none;
+ 	 	font-family: 'Strait', sans-serif;
+font-size: 09px;
+font-size: 0.9rem;
+ margin-right: -10px;
+ }
+
+ /* Article */
+
+.content 
+{
+	padding:20px 0px 20px 0px;
+	background-color: #FFF;
+}
+ article 
+ {
+ 	background-color: #FFF;
+
+ }
+
+ article h1, article h2, article p
+ {
+ 	font-family: 'Strait', sans-serif;
+
+ }
+
+article h1 
+{
+padding: 20px 10px 0px 10px;
+text-align: center;
+}
+ article h1.hide-on-mobile
+ {
+ 	font-size: 50px;
+ 	font-size: 5.0rem;
+ }
+
+ article h1.hide-on-desktop
+ {
+ 	font-size: 25px;
+ 	font-size: 2.5rem;
+ }
+
+
+ article h2
+ {
+
+ 	padding: 0px 10px 10px 10px;
+text-align: center;
+ }
+
+
+ article h2.hide-on-mobile
+ {
+ 	font-size: 40px;
+ 	font-size: 4.0rem;
+ }
+
+ article h2.hide-on-desktop
+ {
+ 	font-size: 20px;
+ 	font-size: 2rem;
+ }
+
+
+ article p
+ {
+ 	font-size: 13px;
+ 	font-size: 1.3rem;
+ 	padding: 0px 10px 20px 10px;
+ 	color:#000;
+ 	text-align: center;
+ 	
+}
+
+
+ 	article p.author
+ 	{
+ 		font-size: 11px;
+ 		font-size: 1.1rem;
+ 	}
+ 	article p.author a 
+ 	{
+ 		text-decoration: none;
+ 		color: #000;
+ 	}
+
+ /* contributors*/
+ 
+ .infos 
+ { 	margin-left: -20px;
+}
+ .contributors a,.contributors 
+ {
+ 	color:#ddd;
+ 	 	font-family: 'Strait', sans-serif;
+text-decoration: none;
+ }	
+
+ .contributors p 
+ {
+ 	padding-bottom:10px;
+ text-align: justify;}
+
+
+.contributors ul, .contributors li
+{
+text-align: left;
+list-style-type: none;
+margin-left: -5px;}
+
+.contributors h1 
+{
+	 	color:#FFF;
+ 	 	font-family: 'Strait', sans-serif;
+ 	 	font-size: 20px;
+ 		font-size: 2.0rem;
+ 	padding:20px 20px 20px 0px;
+}
+
+.about a 
+{
+	text-decoration: underline;
+}
+/* footer */
+
+
+.title 
+{
+	color:#FFF;
+	font-family: 'Strait', sans-serif;
+	font-size: 70px;
+	font-size: 7.0rem;
+	font-style:lighter;
+	padding:20px 20px 20px 0px;
+	text-align: center;
+}
+
+.title .hide-on-desktop
+{
+color:#FFF;
+	font-family: 'Strait', sans-serif;
+	font-size: 28px;
+	font-size: 2.8rem;
+	padding:10px 10px 10px 10px;
+	text-align: left;
+}	
