@@ -86,3 +86,22 @@ input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;pad
 .infos {margin-left:-20px;}
 
 
+/* TEST */
+
+
+
+img {width:30px}
+
+.content-wip
+{
+	background: #FFF;
+	padding: 20px;
+
+	padding:10px; /* aération interne des blocs */
+margin:0 10px; /* espacement horizontal entre les blocs */
+border:1px solid #fff;
+display:inline-block;
+vertical-align:middle;
+text-align:left; /* on rétablit l'alignement du texte */
+}
+
