@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<title>DEV - Musique Approx</title>
+	<!--[if lt IE 9]>
+  <script src="./assets/javascripts/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="./assets/stylesheets/main.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
+
+  <!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
+  <!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="./assets/stylesheets/ie.css" />
+  <![endif]-->
+
+  <link type="text/css" href="./assets/player/skin/ma2/ma.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="grid-container lost">
+
+<div class="grid-100">
+<img src="assets/img/logowb.png" alt="" />
+</div>	
+		</div><!-- .grid-container -->
+
+
+
+		<script src="./assets/javascripts/jquery.js"></script>
+		<script src="./assets/player/jquery.jplayer.min.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+			$('#jquery_jplayer_1').jPlayer({
+				swfPath: '../js',
+				solution: 'html',
+				supplied: 'mp3',
+				errorAlerts: true,
+				warningAlerts: false,
+				ready: function (event) {
+					$(this).jPlayer("setMedia", {
+						mp3: 'http://musiqueapproximative.net/tracks/Polyphonic_Size_Mother%20%20s-_Little_Helper-TXYZOrkkVKk.mp3'
+					})
+				}
+			});
+		});
+		//]]>
+		</script>
+		s
+	</body>
+	</html>

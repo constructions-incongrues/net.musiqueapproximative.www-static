@@ -1,214 +1,88 @@
- @font-face 
- {
- 	font-family: 'Strait';
- 	src: url('../font/Strait-Regular.ttf');
- }
+/*
+Code by Constructions Incongrues www.constructions-incongrues.net/.
+Code licensed under the  GNU AGPLv3:
+http://www.gnu.org/licenses/gpl.txt
+Version: 1.0 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Strait);
+
+html { font-size:62.5%;}
+body { background-color:#000;color:#FFF;}
+
+/* fonts */
+
+article p.author,article p,header h1,article h1, article h2,.all-tracks ul, input.submit, .infos{font-family: 'Strait',sans-serif;}
+
+/* ====== Text treatments ====== */
+
+article p,.title,.title.hide-on-desktopn,article h1, article h2 { text-align: center;}
+article p.author {font-size:10px;font-size:1rem;text-align:right;}
+article p {color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:0 0px 20px 0px;}
+
+@media all and (min-width:1200px) {.title {font-size:70px;font-size:7.0rem;}}
+@media all and (max-width:1200px) {.title {font-size:60px;font-size:6.0rem;}}
+@media all and (max-width:1050px) {.title {font-size:45px;font-size:4.5rem;}}
+@media all and (max-width:800px) {.title {font-size:35px;font-size:3.5rem;}}
+@media all and (max-width:630px) {.title {font-size:30px;font-size:3rem;}}
+@media all and (max-width:530px) {.title {font-size:25px;font-size:2.5rem;}}
+@media all and (max-width:480px) {.title {font-size:2px;font-size:2rem;}}
+
+.title {color:#FFF;background-color:#000;padding:20px 20px 20px 20px;}
+
+.contributors p { padding:0 0 0 0px;text-align:justify;}
+
+/* links */
+
+header a {color:#FFF;background-color:#000;}
+header a, article p a,article p.author a,.contributors a {text-decoration:none;}
+.about a {text-decoration: underline;}
+nav a:hover { opacity:0.7;}
+article p a,.author a{color:#555050;background: #FFF;}
+article p a:hover { color:#000;background: #FFF; }
+.contributors a, .contributors, a.all-tracks-l,a.all-tracks-l span,.all-tracks li  {color:#BBB;background: #000;}
+a.all-tracks-l span span,a.all-tracks-l span span span { color:#FFF;background: #000;}
+a:hover.all-tracks-l,a:hover.all-tracks-l span,a:hover.all-tracks-l span span,a:hover.all-tracks-l span span span {background-color:#FFF;color: #000;}
+
+/* ====== Heading ====== */
+
+.contributors h1, header h1 {color:#fff;background: #000;}
+header h1 {font-size:12px;font-size:1.2rem;text-transform: uppercase;margin:0 0 10px -10px;padding:5px 0 0 0;}
+article h1 {padding:20px 10px 0 10px;margin:-40px 0 0 0;color:#000;background: #FFF;}
+article h1.hide-on-mobile {font-size:50px;font-size:5.0rem;}
+article h1.hide-on-desktop {font-size:25px;font-size:2.5rem;}
+article h2 {color:000;opacity:0.8;background-color:#FFF;padding:0 10px 40px 10px;}
+article h2.hide-on-mobile {font-size:40px;font-size:4.0rem;}
+article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
+.contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 20px 20px 0px;}
+.left {margin-left: 9px;}
+/* ----- list ----- */
+
+.contributors ul,.contributors li {text-align:left;list-style-type:none; margin-left:-5px;}
+.all-tracks ul {padding:0px 0px 20px 0px;;}
+.all-tracks li {font-size:10px;font-size:1rem;padding: 2px 0 1px 0;margin-left:-20px}
+
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+
+article,.content,input.search,input.submit{background-color:#FFF;color: #000;}
+.content{padding:20px 0 0px 0;}
+.grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
+.grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
+input.search {border:none;padding:3px 1px 1px 1px;margin:-4px 0 0 0;}
+input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;padding: 2px;}
+
+@media all {.arrow {width:70px;height:70px;}}
+@media all and (max-width:1200px) {.arrow {width:60px;height:60px;}}
+@media all and (max-width:800px) {.arrow {width:50px;height:50px;}}
+@media all and (max-width:480px) {.arrow {width:30px;height:30px;}}
+.arrowl {float:left;}
+.arrowr {float:right; margin-top:-20px;}
+
+ /* ====== Default spacing ====== */
+
+/* spacing helpers */
+
+.infos {margin-left:-20px;}
 
 
-html { font-size: 62.5%; } 
-
-
- body 
- {
- 	background: #000;
- 	font-family: 'Strait', sans-serif;
-
- }
-
-
- /* Header */
-
-
- header 
- {
- 	color: #fff;
- 	text-transform: uppercase;
- 	font-style: normal;
- }
- header a 
- {
- 	color: #FFF;
- 	text-decoration: none;
- }
- header h1
- {
- 	font-family: 'Strait', sans-serif;
- 	margin-bottom: 10px;
- 	margin-left: -10px;
- 	font-size: 12px;
- 	font-size: 1.2rem;
- 	padding-top: 5px;
-}
-
-.grid-25.hide-on-desktop
- {
- 	padding-top: -10px;
- 	margin-left:-12px;
- 	padding-bottom: 10px;
- 	text-align:left;
- 		
-}
-
-.grid-25.hide-on-mobile
- {
- 	padding-top: 4px;
- 	margin-right:0px;	
- 	text-align: right;
-	}
-
-input.search 
- {
- 	border:none;
- 	background-color: #FFF;
- }
-
- input.submit 
- {
- 	background-color: #FFF;
- 	border:none;
- 	 	font-family: 'Strait', sans-serif;
-font-size: 09px;
-font-size: 0.9rem;
- margin-right: -10px;
- }
-
- /* Article */
-
-.content 
-{
-	padding:20px 0px 20px 0px;
-	background-color: #FFF;
-}
- article 
- {
- 	background-color: #FFF;
-
- }
-
- article h1, article h2, article p
- {
- 	font-family: 'Strait', sans-serif;
-
- }
-
-article h1 
-{
-padding: 20px 10px 0px 10px;
-text-align: center;
-}
- article h1.hide-on-mobile
- {
- 	font-size: 50px;
- 	font-size: 5.0rem;
- }
-
- article h1.hide-on-desktop
- {
- 	font-size: 25px;
- 	font-size: 2.5rem;
- }
-
-
- article h2
- {
-
- 	padding: 0px 10px 10px 10px;
-text-align: center;
- }
-
-
- article h2.hide-on-mobile
- {
- 	font-size: 40px;
- 	font-size: 4.0rem;
- }
-
- article h2.hide-on-desktop
- {
- 	font-size: 20px;
- 	font-size: 2rem;
- }
-
-
- article p
- {
- 	font-size: 13px;
- 	font-size: 1.3rem;
- 	padding: 0px 10px 20px 10px;
- 	color:#000;
- 	text-align: center;
- 	
-}
-
-
- 	article p.author
- 	{
- 		font-size: 11px;
- 		font-size: 1.1rem;
- 	}
- 	article p.author a 
- 	{
- 		text-decoration: none;
- 		color: #000;
- 	}
-
- /* contributors*/
- 
- .infos 
- { 	margin-left: -20px;
-}
- .contributors a,.contributors 
- {
- 	color:#ddd;
- 	 	font-family: 'Strait', sans-serif;
-text-decoration: none;
- }	
-
- .contributors p 
- {
- 	padding-bottom:10px;
- text-align: justify;}
-
-
-.contributors ul, .contributors li
-{
-text-align: left;
-list-style-type: none;
-margin-left: -5px;}
-
-.contributors h1 
-{
-	 	color:#FFF;
- 	 	font-family: 'Strait', sans-serif;
- 	 	font-size: 20px;
- 		font-size: 2.0rem;
- 	padding:20px 20px 20px 0px;
-}
-
-.about a 
-{
-	text-decoration: underline;
-}
-/* footer */
-
-
-.title 
-{
-	color:#FFF;
-	font-family: 'Strait', sans-serif;
-	font-size: 70px;
-	font-size: 7.0rem;
-	font-style:lighter;
-	padding:20px 20px 20px 0px;
-	text-align: center;
-}
-
-.title .hide-on-desktop
-{
-color:#FFF;
-	font-family: 'Strait', sans-serif;
-	font-size: 28px;
-	font-size: 2.8rem;
-	padding:10px 10px 10px 10px;
-	text-align: left;
-}	

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
 	<title>DEV - Musique Approx</title>
-<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
   <script src="./assets/javascripts/html5.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="./assets/stylesheets/main.css" />
@@ -22,120 +22,120 @@
   <link type="text/css" href="./assets/player/skin/ma2/ma.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="grid-container">
 
-		<header class="grid-100 grid-parent">
-			<div class="grid-20 ">
-				<h1><a href="">Browse all tracks (3212)</a></h1>
+<div class="grid-container">
+
+	<header class="grid-100 grid-parent">
+
+		<div class="grid-40">
+			<h1><a href="">Browse all tracks (3212)</a></h1>
+		</div>
+
+		<div class="grid-60 hide-on-mobile">
+			<form method="get" action="/posts">
+			<input type="text" class="search" name="q" value=""/>
+			<input type="submit" class="submit" value="Search !" />
+			</form>
+		</div>
+
+		<div class="grid-60 hide-on-desktop">
+			<form method="get" action="/posts">
+				<input type="text" class="search" name="q" value=""/>
+				<input type="submit" class="submit" value="Search !" />
+			</form>
+		</div>
+	</header>
+
+<section class="content">
+	<article class="grid-100">
+		<nav class="hide-on-mobile">
+			<div class="grid-10  suffix-80 left	">
+				<p><a href=""><img src="./assets/img/left.svg" alt="" class="arrow"/></a></p>
 			</div>
 		
+			<div class="grid-5 right">
+				<p><a href=""><img src="./assets/img/right.svg" alt="" class="arrow"/></a></p>
+			</div>
+		</nav>
+	
+		<nav class="hide-on-desktop">
+			<div class="grid-10 left ">
+				<p><a href=""><img src="./assets/img/left.svg" alt="" class="arrowl"/></a></p>
+			</div>
+			<div class="grid-5 right">
+				<p><a href=""><img src="./assets/img/right.svg" alt="" class="arrowr"/></a></p>
+			</div>
+		</nav>
 
-				<div class="grid-25 prefix-55 hide-on-mobile">
-					
-					<form method="get" action="/posts">
-						<input type="text" class="search" name="q" value=""/>
-						<input type="submit" class="submit" value="Search !" />
-					</form>
-				</div>
-
-					<div class="grid-25 prefix-55 hide-on-desktop">
-					
-					<form method="get" action="/posts">
-						<input type="text" class="search" name="q" value=""/>
-						<input type="submit" class="submit" value="Search !" />
-					</form>
-				</div>
-
-			</header>
-
-			<section class="content">
-				<article class="grid-100">
-
-				
-					<h1 class="hide-on-mobile">Vladimir Cosma </h1>
-					<h1 class="hide-on-desktop"> Vladimir Cosma </h1>
-					<h2 class="hide-on-mobile"> Gotta get a move on (instrumental)</h2>
-					<h2 class="hide-on-desktop"> Gotta get a move on (instrumental)</h2>
+	<div class="grid-100">
+		<h1 class="hide-on-mobile">Vladimir Cosma </h1>
+		<h1 class="hide-on-desktop"> Vladimir Cosma </h1>
+		<h2 class="hide-on-mobile"> Gotta get a move on (instrumental)</h2>
+		<h2 class="hide-on-desktop"> Gotta get a move on (instrumental)</h2>
 
 
-		<div id="skin-loader"></div>
-		
-		<div id="skin-wrapper" data-skin-name="premium-pixels">
-				
-			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			
+<div id="skin-loader"></div>
+	
+	<div id="skin-wrapper">
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 			<div id="jp_container_1" class="jp-audio">
-				<div class="jp-type-playlist">
-					<div class="jp-gui jp-interface">
-						<ul class="jp-controls">
-							<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
-							<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-							<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-							<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-							<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-							<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-							<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-							<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-						</ul>
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
-							</div>
+				<div class="jp-gui jp-interface">
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
 						</div>
-						<div class="jp-volume-bar">
-							<div class="jp-volume-bar-value"></div>
-						</div>
-						<div class="jp-time-holder">
-							<div class="jp-current-time"></div>
-							<div class="jp-duration"></div>
-						</div>
-						<ul class="jp-toggles">
-							<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-							<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-							<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-							<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
-						</ul>
 					</div>
-				
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div><!-- .jp-audio -->
-			
-			
-		</div><!-- .wrapper -->
+					
+		<div class="jp-time-holder">
+			<div class="jp-duration"></div>
+			<div class="jp-current-time"></div>
+		</div>
+	
+		<ul class="jp-controls hide-on-mobile">
+			<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+			<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+			<li><a href="# ">random</a></li>
+			<li><a href="# ">download</a></li>
+		
+		</ul>
 
+	<ul class="jp-controls hide-on-desktop">
+			<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+			<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+			<li><a href="# ">random</a></li>
+			<li><a href="# ">download</a></li>
+			<li><a href="# ">buy</a></li>
+		</ul>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or updateour <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+			</div>
+		</div>
+	</div><!-- .jp-audio -->
 
+</div><!-- .wrapper -->
 
-					<p>Tada tada tada tada tada tada... Pouapoua pouapouapoua pouapoua pouapouapoua... Tabababada toudah...
+<p>Tada <a href="">tada</a> tada tada tada tada... Pouapoua pouapouapoua pouapoua pouapouapoua... Tabababada toudah.</p>
 
-
-					</p>
-
-					<p class="author">Posted by :  <a rel="author" href="">Glafouk</a></p>
-
-				</article>	
-
-			</section>
+<p class="author">Posted by :  <a rel="author" href="">Glafouk</a></p>
+</div><!-- grid-70 -->
+	</article>	
+	</section>
 
 
 			<div class="grid-100 infos">
 
 				<section class="title">
-					<p class="hide-on-mobile">
+					<p>
 						Musique Approximative 
 					</p>
-					<p class="hide-on-desktop">
-						Musique Approximative 
-					</p>
+					
 				</section>
 
 				<section class="contributors">
 
 					<div class="grid-50 about push-50">
-						<h1>À propos : </h1>
+						<h1 >À propos : </h1>
 
 						<p>C'est l'exutoire anarchique d'une bande de mélomanes fêlés. 
 							C’est une playlist infernale alimentée chaque jour par les obsessions et les découvertes de chacun. 
@@ -222,32 +222,32 @@
 
 						<div class="grid-25">
 							<ul>
-							<li>  <a title="Écouter la playlist de Pierre-Guilhem" href="/?c=pierre">Pierre-Guilhem</a></li>
-							<li>  <a title="Écouter la playlist de Génôme" href="/?c=genome">Génôme</a></li>
-							<li>   <a title="Écouter la playlist de Dj No Breakfast" href="/?c=djnobreakfast">Dj No Breakfast</a></li>
-							<li>  <a title="Écouter la playlist de dj klingon" href="/?c=datux">dj klingon</a></li>
-							<li>  <a title="Écouter la playlist de Micheldetrentemoult" href="/?c=micheldetrentemoult">Micheldetrentemoult</a></li>
-							<li>  <a title="Écouter la playlist de Lapin Gris" href="/?c=lapingris">Lapin Gris</a></li>
-							<li>  <a title="Écouter la playlist de Treas" href="/?c=treas">Treas</a></li>
-							<li>  <a title="Écouter la playlist de Alto Clark" href="/?c=altoclark">Alto Clark</a></li>
-							<li>  <a title="Écouter la playlist de (nit)" href="/?c=nit">(nit)</a></li>
-							<li>  <a title="Écouter la playlist de Froe Char" href="/?c=froechar">Froe Char</a></li>
-							<li>  <a title="Écouter la playlist de jknppp" href="/?c=jknppp">jknppp</a></li>
-							<li>  <a title="Écouter la playlist de DJ HoloWestCaust" href="/?c=djholowestcaust">DJ HoloWestCaust</a></li>
-							<li>  <a title="Écouter la playlist de Ubik" href="/?c=ubik">Ubik</a></li>
-							<li>  <a title="Écouter la playlist de MC Feminist" href="/?c=mcfeminist">MC Feminist</a></li>
-							<li>  <a title="Écouter la playlist de Psychotine" href="/?c=psychotine">Psychotine</a></li>
-							<li>  <a title="Écouter la playlist de Cheval" href="/?c=cheval">Cheval</a></li>
-							<li>  <a title="Écouter la playlist de Vendredi" href="/?c=vendredi">Vendredi</a></li>
-							<li>  <a title="Écouter la playlist de Germain" href="/?c=germain">Germain</a></li>
-							<li>  <a title="Écouter la playlist de Brutal" href="/?c=brutal">Brutal</a></li>
-							<li>  <a title="Écouter la playlist de Céleri Electrique" href="/?c=celeri">Céleri Electrique</a></li>
-							<li>  <a title="Écouter la playlist de DJ Bon Goût" href="/?c=djbongout">DJ Bon Goût</a></li>
-							<li>  <a title="Écouter la playlist de JeanCroc" href="/?c=jeancroc">JeanCroc</a></li>
-							<li>  <a title="Écouter la playlist de Arthur de Rastignac" href="/?c=rastignac">Arthur de Rastignac</a></li>
-							<li>  <a title="Écouter la playlist de Google Blum" href="/?c=gooblum">Google Blum</a></li>
-						</ul>
-							</div>
+								<li>  <a title="Écouter la playlist de Pierre-Guilhem" href="/?c=pierre">Pierre-Guilhem</a></li>
+								<li>  <a title="Écouter la playlist de Génôme" href="/?c=genome">Génôme</a></li>
+								<li>   <a title="Écouter la playlist de Dj No Breakfast" href="/?c=djnobreakfast">Dj No Breakfast</a></li>
+								<li>  <a title="Écouter la playlist de dj klingon" href="/?c=datux">dj klingon</a></li>
+								<li>  <a title="Écouter la playlist de Micheldetrentemoult" href="/?c=micheldetrentemoult">Micheldetrentemoult</a></li>
+								<li>  <a title="Écouter la playlist de Lapin Gris" href="/?c=lapingris">Lapin Gris</a></li>
+								<li>  <a title="Écouter la playlist de Treas" href="/?c=treas">Treas</a></li>
+								<li>  <a title="Écouter la playlist de Alto Clark" href="/?c=altoclark">Alto Clark</a></li>
+								<li>  <a title="Écouter la playlist de (nit)" href="/?c=nit">(nit)</a></li>
+								<li>  <a title="Écouter la playlist de Froe Char" href="/?c=froechar">Froe Char</a></li>
+								<li>  <a title="Écouter la playlist de jknppp" href="/?c=jknppp">jknppp</a></li>
+								<li>  <a title="Écouter la playlist de DJ HoloWestCaust" href="/?c=djholowestcaust">DJ HoloWestCaust</a></li>
+								<li>  <a title="Écouter la playlist de Ubik" href="/?c=ubik">Ubik</a></li>
+								<li>  <a title="Écouter la playlist de MC Feminist" href="/?c=mcfeminist">MC Feminist</a></li>
+								<li>  <a title="Écouter la playlist de Psychotine" href="/?c=psychotine">Psychotine</a></li>
+								<li>  <a title="Écouter la playlist de Cheval" href="/?c=cheval">Cheval</a></li>
+								<li>  <a title="Écouter la playlist de Vendredi" href="/?c=vendredi">Vendredi</a></li>
+								<li>  <a title="Écouter la playlist de Germain" href="/?c=germain">Germain</a></li>
+								<li>  <a title="Écouter la playlist de Brutal" href="/?c=brutal">Brutal</a></li>
+								<li>  <a title="Écouter la playlist de Céleri Electrique" href="/?c=celeri">Céleri Electrique</a></li>
+								<li>  <a title="Écouter la playlist de DJ Bon Goût" href="/?c=djbongout">DJ Bon Goût</a></li>
+								<li>  <a title="Écouter la playlist de JeanCroc" href="/?c=jeancroc">JeanCroc</a></li>
+								<li>  <a title="Écouter la playlist de Arthur de Rastignac" href="/?c=rastignac">Arthur de Rastignac</a></li>
+								<li>  <a title="Écouter la playlist de Google Blum" href="/?c=gooblum">Google Blum</a></li>
+							</ul>
+						</div>
 
 						<div class="grid-25">
 
@@ -282,7 +282,7 @@
 
 		<script src="./assets/javascripts/jquery.js"></script>
 		<script src="./assets/player/jquery.jplayer.min.js"></script>
-	<script type="text/javascript">
+		<script type="text/javascript">
 		//<![CDATA[
 		$(document).ready(function(){
 			$('#jquery_jplayer_1').jPlayer({
@@ -299,7 +299,7 @@
 			});
 		});
 		//]]>
-	</script>
-s
+		</script>
+		s
 	</body>
 	</html>
