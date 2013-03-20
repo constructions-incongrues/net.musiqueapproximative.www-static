@@ -16,9 +16,9 @@ article p.author,article p,header h1,article h1, article h2,.all-tracks ul, inpu
 
 /* ====== Text treatments ====== */
 
-article p,.title,.title.hide-on-desktopn,article h1, article h2 { text-align: center;}
+article h1, article h2{ text-align: center;}
 article p.author {font-size:10px;font-size:1rem;text-align:right;}
-article p {color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:0 0px 20px 0px;}
+article p {width: 96%;margin-left: 40px;color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:20px 0px 20px 0px;}
 
 @media all and (min-width:1200px) {.title {font-size:70px;font-size:7.0rem;}}
 @media all and (max-width:1200px) {.title {font-size:60px;font-size:6.0rem;}}
@@ -26,9 +26,11 @@ article p {color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padd
 @media all and (max-width:800px) {.title {font-size:35px;font-size:3.5rem;}}
 @media all and (max-width:630px) {.title {font-size:30px;font-size:3rem;}}
 @media all and (max-width:530px) {.title {font-size:25px;font-size:2.5rem;}}
-@media all and (max-width:480px) {.title {font-size:2px;font-size:2rem;}}
+@media all and (max-width:480px) {.title {font-size:20px;font-size:2rem;}}
 
-.title {color:#FFF;background-color:#000;padding:20px 20px 20px 20px;}
+.title {color:#FFF;background-color:#000;}
+.title.hide-on-desktop {text-align: left;padding: 20px 0px 0px 10px;}
+.title.hide-on-mobile {text-align: center;padding:20px 20px 20px 20px}
 
 .contributors p { padding:0 0 0 0px;text-align:justify;}
 
@@ -48,10 +50,10 @@ a:hover.all-tracks-l,a:hover.all-tracks-l span,a:hover.all-tracks-l span span,a:
 
 .contributors h1, header h1 {color:#fff;background: #000;}
 header h1 {font-size:12px;font-size:1.2rem;text-transform: uppercase;margin:0 0 10px -10px;padding:5px 0 0 0;}
-article h1 {padding:20px 10px 0 10px;margin:-40px 0 0 0;color:#000;background: #FFF;}
+article h1 {padding:20px 10px 0 10px;margin:-80px 0 0 0;color:#000;background: #FFF;}
 article h1.hide-on-mobile {font-size:50px;font-size:5.0rem;}
 article h1.hide-on-desktop {font-size:25px;font-size:2.5rem;}
-article h2 {color:000;opacity:0.8;background-color:#FFF;padding:0 10px 40px 10px;}
+article h2 {color:000;opacity:0.8;background-color:#FFF;padding:0 10px 20px 10px;}
 article h2.hide-on-mobile {font-size:40px;font-size:4.0rem;}
 article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 .contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 20px 20px 0px;}
@@ -65,19 +67,17 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 /* **************** TEMPLATE ***************** */
 /* ====== Page Head, Body, and Foot ====== */
 
+html, body, article {height: 100%; position:relative; }
 article,.content,input.search,input.submit{background-color:#FFF;color: #000;}
-.content{padding:20px 0 0px 0;}
+.content{padding:40px 0 0px 0;}
 .grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
 .grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
 input.search {border:none;padding:3px 1px 1px 1px;margin:-4px 0 0 0;}
 input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;padding: 2px;}
 
-@media all {.arrow {width:70px;height:70px;}}
-@media all and (max-width:1200px) {.arrow {width:60px;height:60px;}}
-@media all and (max-width:800px) {.arrow {width:50px;height:50px;}}
-@media all and (max-width:480px) {.arrow {width:30px;height:30px;}}
-.arrowl {float:left;}
-.arrowr {float:right; margin-top:-20px;}
+.arrow {width: 30px;width: 3rem;}
+.arrowl {float:left;width: 30px;}
+.arrowr {float:right; margin-top:-40px;width: 30px}
 
  /* ====== Default spacing ====== */
 

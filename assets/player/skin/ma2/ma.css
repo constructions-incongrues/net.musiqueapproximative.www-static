@@ -55,22 +55,20 @@
 }
 .jp-audio {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0 0;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #fff;
   line-height: 1.6;
-  padding-top:10px;
-  padding-bottom: 10px;
+
 }
 .jp-audio a {
-  text-decoration: none;
-  color: #d2d6db;
-}
+  color: #555050;
+text-decoration: none;}
 .jp-audio a:hover {
-  color: #ffffff;
+  color: #000;
 }
 .jp-interface {
   position: relative;
@@ -82,15 +80,15 @@
 
 
 .jp-controls {
-  float: left;
+
 
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  padding: 20px;
   z-index: 100;
-  margin-top: -20px;
-  margin-left: 39px;
+  text-align: center;
 }
+
 
 .jp-controls:after {
   content: " ";
@@ -107,13 +105,13 @@
 
 }
 .jp-controls li {
-  float: left;
       display:inline;
       padding-right: 8px;
+      
 
 }
-@media all and (min-width:600px){.jp-controls a,.jp-time-holder {font-size: 9px;font-size: 0.9rem;}}
-@media all and (min-width:600px){.jp-controls a, {font-size: 10px;font-size: 1rem;}}
+@media all and (min-width:600px){.jp-controls a,.jp-time-holder {font-size: 12px;font-size: 1.2rem;}}
+@media all and (min-width:600px){.jp-controls a, {font-size: 1px;font-size: 1.2rem;}}
 @media all and (max-width:600px) {.jp-controls a,.jp-time-holder  {font-size:8px;font-size:0.8rem;}}
 .jp-controls a,.jp-time-holder  {color:#555050;font-family: 'Strait', sans-serif;}
 
@@ -141,7 +139,7 @@ color:#000;
 .jp-progress {
   position: absolute;
   padding: 0px 1px 0 40px;
-  margin-top: 12px;
+  
   margin-bottom: 12px;
   margin-left: 0;
   margin-right: 0;
@@ -189,18 +187,19 @@ color:#000;
 /* TIME HOLDER
 ----------------------------------------------- */
 .jp-time-holder {
-color:#555050;
+color:#000;
       font-family: 'Strait', sans-serif;
 text-align: right;
+  z-index:2000;
+
 }
 
-@media all and {}
-.jp-current-time
+
+}.jp-current-time
 {
    float: right;
   display:inline;
   text-align: right;
-  margin-top: -17px;
 }
 
 .jp-duration:before 
@@ -211,11 +210,11 @@ text-align: right;
 
 .jp-duration
 {
-margin-top: -17px;
 
   float: right;
   display:inline;
   text-align: right;
+  margin-top: -20px;
 
 }
 
