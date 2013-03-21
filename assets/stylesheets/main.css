@@ -18,7 +18,7 @@ article p.author,article p,header h1,article h1, article h2,.all-tracks ul, inpu
 
 article h1, article h2{ text-align: center;}
 article p.author {font-size:10px;font-size:1rem;text-align:right;}
-article p {width: 96%;margin-left: 40px;color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:20px 0px 20px 0px;}
+article p {color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:20px 0px 20px 0px;}
 
 @media all and (min-width:1200px) {.title {font-size:70px;font-size:7.0rem;}}
 @media all and (max-width:1200px) {.title {font-size:60px;font-size:6.0rem;}}
@@ -29,8 +29,8 @@ article p {width: 96%;margin-left: 40px;color:#000;background-color:#FFF;font-si
 @media all and (max-width:480px) {.title {font-size:20px;font-size:2rem;}}
 
 .title {color:#FFF;background-color:#000;}
-.title.hide-on-desktop {text-align: left;padding: 20px 0px 0px 10px;}
-.title.hide-on-mobile {text-align: center;padding:20px 20px 20px 20px}
+.title.hide-on-desktop {text-align: left;padding: 20px 0px 0px 0px;}
+.title.hide-on-mobile {text-align: center;padding:20px 20px 20px 0px}
 
 .contributors p { padding:0 0 0 0px;text-align:justify;}
 
@@ -53,11 +53,10 @@ header h1 {font-size:12px;font-size:1.2rem;text-transform: uppercase;margin:0 0 
 article h1 {padding:20px 10px 0 10px;margin:-20px 0 0 0;color:#000;background: #FFF;}
 article h1.hide-on-mobile {font-size:50px;font-size:5.0rem;}
 article h1.hide-on-desktop {font-size:25px;font-size:2.5rem;}
-article h2 {color:000;opacity:0.8;background-color:#FFF;padding:0 10px 20px 10px;}
+article h2 {color:000;opacity:0.8;background-color:#FFF;padding:0 10px 40px 10px;}
 article h2.hide-on-mobile {font-size:40px;font-size:4.0rem;}
 article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
-.contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 20px 20px 0px;}
-.left {margin-left: 9px;}
+.contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 0px 20px 0px;}
 /* ----- list ----- */
 
 .contributors ul,.contributors li {text-align:left;list-style-type:none; margin-left:-5px;}
@@ -67,7 +66,6 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 /* **************** TEMPLATE ***************** */
 /* ====== Page Head, Body, and Foot ====== */
 
-html, body, article {height: 100%; position:relative; }
 article,.content,input.search,input.submit{background-color:#FFF;color: #000;}
 .content{padding:0px 0 0px 0;}
 .content-text {padding-top: 40px;}
@@ -75,9 +73,9 @@ article,.content,input.search,input.submit{background-color:#FFF;color: #000;}
 .grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
 input.search {border:none;padding:3px 1px 1px 1px;margin:-4px 0 0 0;}
 input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;padding: 2px;}
+img {text-align: center;width: 30px;}
 
-img {width:30px;}
-
+.descriptif {margin:20px 0 0 40px;text-align: center;}
  /* ====== Default spacing ====== */
 
 /* spacing helpers */
@@ -86,21 +84,3 @@ img {width:30px;}
 
 
 /* TEST */
-
-
-
-img {width:30px}
-
-.content-wip
-{
-	background: #FFF;
-	padding: 20px;
-
-	padding:10px; /* aération interne des blocs */
-margin:0 10px; /* espacement horizontal entre les blocs */
-border:1px solid #fff;
-display:inline-block;
-vertical-align:middle;
-text-align:left; /* on rétablit l'alignement du texte */
-}
-

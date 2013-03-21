@@ -55,7 +55,7 @@
 }
 .jp-audio {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 100%;
   padding: 0 0;
   font-size: 1em;
@@ -83,8 +83,9 @@ text-decoration: none;}
 
 
   list-style-type: none;
-  padding: 0;
   padding: 20px;
+  
+  margin-left: 20px;
   z-index: 100;
   text-align: center;
 }
@@ -106,16 +107,13 @@ text-decoration: none;}
 }
 .jp-controls li {
       display:inline;
-      padding-right: 8px;
       
 
 }
-@media all and (min-width:600px){.jp-controls a,.jp-time-holder {font-size: 12px;font-size: 1.2rem;}}
-@media all and (min-width:600px){.jp-controls a, {font-size: 1px;font-size: 1.2rem;}}
-@media all and (max-width:600px) {.jp-controls a,.jp-time-holder  {font-size:8px;font-size:0.8rem;}}
-.jp-controls a,.jp-time-holder  {color:#555050;font-family: 'Strait', sans-serif;}
 
+.jp-controls a  {color:#000;font-family: 'Strait', sans-serif;font-size: 20px;font-size: 2rem;text-transform: uppercase;}
 
+.jp-controls {color:#000;font-size: 20px;font-size: 2rem;}
 .jp-controls a:hover
 {
 opacity:0.8;
@@ -128,7 +126,6 @@ color:#000;
   outline: none;
   width: 30px;
   height: 30px;
-  background-position: 10px center;
   background-repeat: no-repeat;
 }
 
