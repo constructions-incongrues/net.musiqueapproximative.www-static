@@ -12,7 +12,7 @@ body { background-color:#000;color:#FFF;}
 
 /* fonts */
 
-article p.author,article p,header h1,article h1, article h2,.all-tracks ul, input.submit, .infos{font-family: 'Strait',sans-serif;}
+article p.author,article p,header h1,article h1, article h2,.all-tracks ul, input.submit, .infos,.contributors {font-family: 'Strait',sans-serif;}
 
 /* ====== Text treatments ====== */
 
