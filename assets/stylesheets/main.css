@@ -59,7 +59,7 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 .contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 0px 20px 0px;}
 /* ----- list ----- */
 
-.contributors ul,.contributors li {text-align:left;list-style-type:none; margin-left:-5px;}
+.contributors ul,.contributors li {text-align:left;list-style-type:none; ;}
 .all-tracks ul {padding:0px 0px 20px 0px;;}
 .all-tracks li {font-size:10px;font-size:1rem;padding: 2px 0 1px 0;margin-left:-20px}
 
@@ -69,18 +69,21 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 article,.content,input.search,input.submit{background-color:#FFF;color: #000;}
 .content{padding:0px 0 0px 0;}
 .content-text {padding-top: 40px;}
-.grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
-.grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
+
 input.search {border:none;padding:3px 1px 1px 1px;margin:-4px 0 0 0;}
 input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;padding: 2px;}
 img {text-align: center;width: 30px;}
 
 .descriptif {margin:30px 0 0 0;padding-top: 20px;text-align: center;}
+
+/* search */
+
+.grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
+.grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
  /* ====== Default spacing ====== */
 
 /* spacing helpers */
 
-.infos {margin-left:-20px;}
 
 
 /* TEST */
