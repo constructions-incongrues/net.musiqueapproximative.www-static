@@ -1,5 +1,5 @@
 /*
-Code by Constructions Incongrues www.constructions-incongrues.net/.
+Code by Constructions Incongrues www.constructions-incongrues.net/.p
 Code licensed under the  GNU AGPLv3:
 http://www.gnu.org/licenses/gpl.txt
 Version: 1.0 
@@ -17,17 +17,11 @@ article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.
 header h1,article h1, article h2, .title,.contributors h1, input.submit{font-family: 'Arvo',sans-serif;}
 /* ====== Text treatments ====== */
 
-article h1, article h2{ text-align: center;}
 article p.author {font-size:10px;font-size:1rem;text-align:right;}
 article p {color:#000;background-color:#FFF;font-size:13px;font-size:1rem;padding:20px 0px 20px 0px;}
 
-@media all and (min-width:1200px) {.title {font-size:70px;font-size:7.0rem;}}
-@media all and (max-width:1200px) {.title {font-size:60px;font-size:6.0rem;}}
-@media all and (max-width:1050px) {.title {font-size:45px;font-size:4.5rem;}}
-@media all and (max-width:800px) {.title {font-size:35px;font-size:3.5rem;}}
-@media all and (max-width:630px) {.title {font-size:30px;font-size:3rem;}}
-@media all and (max-width:530px) {.title {font-size:25px;font-size:2.5rem;}}
-@media all and (max-width:480px) {.title {font-size:20px;font-size:2rem;}}
+@media all and (min-width:1200px) {.title {font-size:50px;font-size:5.0rem;}}
+
 
 .title {color:#FFF;background-color:#000;}
 .title.hide-on-desktop {text-align: left;padding: 20px 0px 0px 0px;}
@@ -50,14 +44,16 @@ a:hover.all-tracks-l,a:hover.all-tracks-l span,a:hover.all-tracks-l span span,a:
 /* ====== Heading ====== */
 
 .contributors h1, header h1 {color:#fff;background: #000;}
-header h1 {font-size:12px;font-size:1.2rem;text-transform: uppercase;margin:0 0 10px -10px;padding:5px 0 0 0;}
+header h1 {font-size:10px;font-size:1rem;text-transform: uppercase;margin:0 0 10px -10px;padding:5px 0 0 0;}
 article h1 {padding:20px 0 20 0;color:#000;background: #FFF;}
 article h1.hide-on-mobile {font-size:50px;font-size:5.0rem;}
 article h1.hide-on-desktop {font-size:25px;font-size:2.5rem;}
-article h2 {color:000;opacity:0.8;background-color:#FFF;padding:10px 0 30px 0;}
+article h2 {color:#000;opacity:0.8;background-color:#FFF;padding:10px 0 30px 0;}
+article h1, article h2{ text-align: center;}
+
 article h2.hide-on-mobile {font-size:40px;font-size:4.0rem;}
 article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
-.contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 0 20px 0;}
+.contributors h1 {font-size:15px;font-size:1.5rem;padding:20px 0 20px 0;}
 /* ----- list ----- */
 
 .contributors ul,.contributors li {text-align:left;list-style-type:none;}
