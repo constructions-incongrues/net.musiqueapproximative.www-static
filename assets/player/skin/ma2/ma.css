@@ -42,7 +42,6 @@
 
 #skin-wrapper 
 {
-  margin-left: -38px;
   
 }
 /* GENERAL
@@ -59,7 +58,7 @@
   max-width: 100%;
   padding: 0 0;
   font-size: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+
   color: #fff;
   line-height: 1.6;
 
