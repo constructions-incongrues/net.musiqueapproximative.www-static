@@ -5,16 +5,16 @@ http://www.gnu.org/licenses/gpl.txt
 Version: 1.0 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Strait);
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Rambla);
 
 html { font-size:62.5%;}
 body { background-color:#000;color:#FFF;}
 
 /* fonts */
 
-article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.descriptif {font-family:'Oxygen',  sans-serif;}
-header h1,article h1, article h2, .title,.contributors h1, input.submit{font-family: 'Strait',sans-serif;}
+article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.descriptif {font-family:'Rambla',  sans-serif;}
+header h1,article h1, article h2, .title,.contributors h1, input.submit{font-family: 'Arvo',sans-serif;}
 /* ====== Text treatments ====== */
 
 article h1, article h2{ text-align: center;}
