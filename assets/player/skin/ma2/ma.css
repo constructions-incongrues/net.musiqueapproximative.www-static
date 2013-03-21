@@ -35,15 +35,12 @@
   -o-transition-property: background-color, border-color, color, opacity;
   -o-transition-timing-function: linear;
   -o-transition-duration: 0.15s;
-  transition-property: background-color, border-color, color, opacity;
+  transition-property: background-color, border-color, color, opacit
+  
   transition-timing-function: linear;
   transition-duration: 0.15s;
 }
 
-#skin-wrapper 
-{
-  
-}
 /* GENERAL
 ----------------------------------------------- */
       
@@ -58,7 +55,7 @@
   max-width: 100%;
   padding: 0 0;
   font-size: 1em;
-
+  font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #fff;
   line-height: 1.6;
 
