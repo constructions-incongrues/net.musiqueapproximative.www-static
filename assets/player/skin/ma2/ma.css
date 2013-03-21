@@ -182,11 +182,15 @@ color:#000;
 ----------------------------------------------- */
 .jp-time-holder {
 color:#000;
-      font-family: 'Strait', sans-serif;
+      font-family: 'Rambla', sans-serif;
 text-align: right;
   z-index:2000;
-
-}
+position: relative;
+font-size: 1.5em;
+line-height: 27px;
+top: -10px;
+left: -2px;
+color:#FFF}
 
 
 }.jp-current-time
@@ -208,8 +212,7 @@ text-align: right;
   float: right;
   display:inline;
   text-align: right;
-  margin-top: -20px;
-
+$
 }
 
 /* CSS3 ANIMATINS
