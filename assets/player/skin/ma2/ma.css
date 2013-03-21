@@ -108,9 +108,9 @@ text-decoration: none;}
 
 }
 
-.jp-controls a  {color:#000;font-family: 'Arvo', sans-serif;font-size: 20px;font-size: 2rem;text-transform: uppercase;}
+.jp-controls a  {color:#000;font-family: 'Rambla', sans-serif;font-size: 15px;font-size: 1.5rem;text-transform: uppercase;}
 
-.jp-controls {color:#000;font-size: 20px;font-size: 2rem;}
+.jp-controls {color:#000;font-size: 15px;font-size: 1.5rem;}
 .jp-controls a:hover
 {
 opacity:0.8;
