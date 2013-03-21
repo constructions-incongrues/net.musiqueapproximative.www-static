@@ -6,19 +6,20 @@ Version: 1.0
 */
 
 @import url(http://fonts.googleapis.com/css?family=Strait);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
 
 html { font-size:62.5%;}
 body { background-color:#000;color:#FFF;}
 
 /* fonts */
 
-article p.author,article p,header h1,article h1, article h2,.all-tracks ul, input.submit, .infos,.contributors {font-family: 'Strait',sans-serif;}
-
+article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.descriptif {font-family:'Oxygen',  sans-serif;}
+header h1,article h1, article h2, .title,.contributors h1, input.submit{font-family: 'Strait',sans-serif;}
 /* ====== Text treatments ====== */
 
 article h1, article h2{ text-align: center;}
 article p.author {font-size:10px;font-size:1rem;text-align:right;}
-article p {color:#000;background-color:#FFF;font-size:13px;font-size:1.3rem;padding:20px 0px 20px 0px;}
+article p {color:#000;background-color:#FFF;font-size:13px;font-size:1rem;padding:20px 0px 20px 0px;}
 
 @media all and (min-width:1200px) {.title {font-size:70px;font-size:7.0rem;}}
 @media all and (max-width:1200px) {.title {font-size:60px;font-size:6.0rem;}}
@@ -59,7 +60,8 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 .contributors h1 {font-size:20px;font-size:2.0rem;padding:20px 0 20px 0;}
 /* ----- list ----- */
 
-.contributors ul,.contributors li {text-align:left;list-style-type:none; ;}
+.contributors ul,.contributors li {text-align:left;list-style-type:none;}
+.contributors li {margin-left: -8px;}
 .all-tracks ul {padding:0px 0px 20px 0px;;}
 .all-tracks li {font-size:10px;font-size:1rem;padding: 2px 0 1px 0;margin-left:-20px}
 
@@ -75,7 +77,7 @@ input.search {border:none;padding:3px 1px 1px 1px;margin:-4px 0 0 0;}
 input.submit {border:none;font-size:09px;font-size:0.9rem;margin-right:-11px;padding: 2px;}
 img {text-align: center;width: 30px;}
 
-.descriptif {margin:30px 0 0 0;padding-top: 20px;text-align: center;}
+.descriptif {margin:30px 0 0 0;padding-top: 20px;text-align: center;font-size: 1.2rem;}
 
 /* search */
 
