@@ -131,12 +131,12 @@ color:#000;
 ----------------------------------------------- */
 .jp-progress {
   position: absolute;
-  padding: 0px 1px 0 40px;
+  padding: 0px 1px 0 0px;
   
   margin-bottom: 12px;
   margin-left: 0;
   margin-right: 0;
-  width: 89%;
+  width: 100%;
 
 }
 .jp-seek-bar,
@@ -180,10 +180,10 @@ color:#000;
   position: relative;
   float: right; font-size: 1.5em;
   line-height: 27px;
-  top: -10px;
+  top: -53px;
   left: -2px;
   color:#FFF;
-  width:11%
+  
 }
 
 .jp-current-time
