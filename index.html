@@ -28,7 +28,7 @@
 	<header class="grid-100 grid-parent">
 
 		<div class="grid-40">
-			<h1><a href="">Browse all tracks (3212)</a></h1>
+			<h1><a href="">Parcourir les morceaux (3212)</a></h1>
 		</div>
 
 		<div class="grid-60 hide-on-mobile">
@@ -44,12 +44,44 @@
 				<input type="submit" class="submit" value="Search !" />
 			</form>
 		</div>
-	</header>
+
+        
+<section class="all-tracks">
+        <div class="grid-100">
+
+<div class="grid-50">
+    <ul>
+        <li>
+            <a href="#" class="all-tracks-l">
+                <span itemprop="author">Unknown Artist<span> - 
+                <span itemprop="name">FinalCountdown2000 <span>(Michel Bertier)</span></span></span></span> 
+                </a>
+            </li>
+    </ul>
+</div>
+
+<div class="grid-50">
+    <ul>
+        <li>
+            <a href="#" class="all-tracks-l">
+                <span itemprop="author">Unknown Artist<span> - 
+                <span itemprop="name">FinalCountdown2000 <span>(Michel Bertier)</span></span></span></span> 
+            </a>
+        </li>
+    </ul>
+</div>
+
+</section>
+</header>
 
 <section class="content">
 	<article class="grid-100">
-  <div class="nav-l grid-5">
-                <p><a href=""><img src="assets/img/left2.svg" alt="" /></a></p>
+        <div class="nav-l grid-5 hide-on-mobile">
+            <p><a href=""><img src="assets/img/left2.svg" alt="" /></a></p>
+        </div>
+
+        <div class="nav-l grid-5 hide-on-desktop">
+            <p><a href=""><img src="assets/img/left2.svg" alt="" /></a></p>
         </div>
 
 	<div class="grid-90 content-text">
@@ -113,14 +145,11 @@
 
 <section class="contributors">
 
-<div class="grid-90 prefix-5 suffix-5 ">
-    <div class="grid-50"><h1>Contributeurs</h1></div>
-    <div class="grid-40"><h1>À propos</h1></div>
-</div>
-
 <div class="grid-90 prefix-5 suffix-5">
 
 <div class="grid-50">
+      <h1>Contributeurs</h1>
+
         <div class="grid-25">
 
                             <ul>
@@ -237,19 +266,33 @@
 </div>
 
 <div class="grid-40">
+   <h1>À propos</h1>
 
-                        <cite>C'est l'exutoire anarchique d'une bande de mélomanes fêlés. 
+                        <p>C'est l'exutoire anarchique d'une bande de mélomanes fêlés. 
                             C’est une playlist infernale alimentée chaque jour par les obsessions et les découvertes de chacun. 
                             L’arbitraire y est roi et on s’y amuse bien : c’est Musique Approximative.
-                            Cliquez sur le nom d'un contributeur pour écouter sa playlist
-                        </cite>
+                        </p>
+   <h2>Consommer de la musique autrement :</h2>
 
                         <p>
-                            Consommer la musique autrement : <a href="">RSS</a> / <a href="">Facebook</a> / <a href="">Twitter</a> / <a href="">Email</a>
+                            <a href="">RSS</a> / <a href="">Facebook</a> / <a href="">Twitter</a> / <a href="">Email</a>
                         </p>
+  <h2>Contact</h2>
+
                         <p>
-                            Contact : bertier at musiqueapproximative point net
+                           bertier at musiqueapproximative point net
                         </p>
+  <h2>Raccourcis</h2>
+
+<ul class="shortcuts">
+  <li> espace : play / pause</li>
+  <li> b : parcourir les morceaux</li>
+  <li> flèches : naviguer entre les morceaux</li>
+  <li> r : aléatoire</li>
+  <li> / : recherche</li>
+</ul>
+
+  <h2>Crédits</h2>                      
                         <p>
                             Musique Approximative est développé par Constructions Incongrues et est hébergé par Pastis Hosting.
                             -
@@ -266,12 +309,10 @@
 
 
 		<script src="./assets/javascripts/jquery.js"></script>
-        <script src="./assets/javascripts/jquery.hotkeys.js"></script>
 		<script src="./assets/player/jquery.jplayer.min.js"></script>
 		<script type="text/javascript">
 		//<![CDATA[
 		$(document).ready(function(){
-            // Media player
 			$('#jquery_jplayer_1').jPlayer({
 				swfPath: '../js',
 				solution: 'html',
@@ -284,30 +325,7 @@
 					})
 				}
 			});
-
-            // Navigation arrows vertical centering
 			$('.nav-l img, .nav-r img').height($('.content').height());
-
-            /*
-             * Hotkeys
-             * @see https://github.com/jeresig/jquery.hotkeys
-             * - space : play / pause
-             * - b : browse tracks
-             * - arrows : navigate between tracks
-             * - r : random
-             * - / : search
-             */
-             $(document).bind('keydown', 'space', function(e) {
-                var $player = $('#jquery_jplayer_1');
-                var isPaused = $player.data().jPlayer.status.paused;
-                if (isPaused) {
-                    $player.jPlayer('play');
-                } else {
-                    $player.jPlayer('pause');
-                }
-                return false;   
-             });
-
 		});
 		//]]>
 		</script>
