@@ -286,7 +286,8 @@
 
 <ul class="shortcuts">
   <li> espace : play / pause</li>
-  <li> flèches : naviguer entre les morceaux</li>
+  <li> flèche gauche : morceau précédent</li>
+  <li> flèche droite : morceau suivant</li>
   <li> alt + b : parcourir les morceaux</li>
   <li> alt + r : aléatoire</li>
   <li> F3 : recherche</li>
@@ -331,11 +332,6 @@
             /*
              * Hotkeys
              * @see https://github.com/jeresig/jquery.hotkeys
-             * - space : play / pause
-             * - arrows : navigate between tracks (TODO)
-             * - ALT + b : browse tracks 
-             * - ALT + r : random
-             * - F3 : search
              */
 
              // space : play / pause
@@ -367,6 +363,19 @@
                 $('.search').focus();
                 return false;
              });
+
+             // left arrow : previous track
+             $(document).bind('keydown', 'left', function() {
+                $('.nav-l').focus();
+                return false;
+             });
+
+             // right arrow : next track
+             $(document).bind('keydown', 'right', function() {
+                $('.nav-r').focus();
+                return false;
+             });
+
 		});
 		//]]>
 		</script>
