@@ -171,25 +171,20 @@ color:#000;
     height:27px;
     top:-10px;
 }
-.jp-play-bar 
-{
-     background: #000;
-    height:27px;
-    top:-10px;
-}
+
 /* TIME HOLDER
 ----------------------------------------------- */
 .jp-time-holder {
-background: #ccc;
-      font-family: 'Rambla', sans-serif;
-position: relative;
-float: right; font-size: 1.5em;
-line-height: 27px;
-top: -10px;
-left: -2px;
-color:#FFF;
-width:11%}
-
+  background: #fff;
+  font-family: 'Rambla', sans-serif;
+  position: relative;
+  float: right; font-size: 1.5em;
+  line-height: 27px;
+  top: -10px;
+  left: -2px;
+  color:#FFF;
+  width:11%
+}
 
 .jp-current-time
 {
