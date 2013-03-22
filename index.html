@@ -286,10 +286,10 @@
 
 <ul class="shortcuts">
   <li> espace : play / pause</li>
-  <li> b : parcourir les morceaux</li>
   <li> flèches : naviguer entre les morceaux</li>
-  <li> r : aléatoire</li>
-  <li> / : recherche</li>
+  <li> alt + b : parcourir les morceaux</li>
+  <li> alt + r : aléatoire</li>
+  <li> F3 : recherche</li>
 </ul>
 
   <h2>Crédits</h2>                      
@@ -308,7 +308,8 @@
 
 
 
-		<script src="./assets/javascripts/jquery.js"></script>
+        <script src="./assets/javascripts/jquery.js"></script>
+		<script src="./assets/javascripts/jquery.hotkeys.js"></script>
 		<script src="./assets/player/jquery.jplayer.min.js"></script>
 		<script type="text/javascript">
 		//<![CDATA[
@@ -326,6 +327,46 @@
 				}
 			});
 			$('.nav-l img, .nav-r img').height($('.content').height());
+
+            /*
+             * Hotkeys
+             * @see https://github.com/jeresig/jquery.hotkeys
+             * - space : play / pause
+             * - arrows : navigate between tracks (TODO)
+             * - ALT + b : browse tracks 
+             * - ALT + r : random
+             * - F3 : search
+             */
+
+             // space : play / pause
+             $(document).bind('keydown', 'space', function() {
+                var $player = $('#jquery_jplayer_1');
+                var isPaused = $player.data().jPlayer.status.paused;
+                if (isPaused) {
+                    $player.jPlayer('play');
+                } else {
+                    $player.jPlayer('pause');
+                }
+                return false;   
+             });
+
+             // ALT + r : random
+             $(document).bind('keydown', 'alt+r', function() {
+                $('.random').click();
+                return false;
+             });
+
+             // ALT + b : browse tracks
+             $(document).bind('keydown', 'alt+b', function() {
+                $('.browse').click();
+                return false;
+             });
+
+             // F3 random
+             $(document).bind('keydown', 'F3', function() {
+                $('.search').focus();
+                return false;
+             });
 		});
 		//]]>
 		</script>
