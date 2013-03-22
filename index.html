@@ -62,6 +62,7 @@
 
 <div id="skin-loader"></div>
 	
+	<div id="skin-wrapper">
 		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 			<div id="jp_container_1" class="jp-audio">
 				<div class="jp-gui jp-interface">
@@ -70,17 +71,19 @@
 							<div class="jp-play-bar"></div>
 						</div>
 					</div>
-                
-					
-	<ul class="jp-controls">
-			<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-			<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-			<li><a href="#">[random]</a></li>
-		</ul>
-            <div class="jp-time-holder">
+					<div class="jp-time-holder">
             <div class="jp-duration"></div>
             <div class="jp-current-time"></div>
         </div>
+    
+
+	
+	<ul class="jp-controls">
+			<li><a href="javascript:;" class="jp-play" tabindex="1">play</a>/</li>
+			<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+			<li><a href="# ">random</a></li>
+		
+		</ul>
 		<div class="jp-no-solution">
 			<span>Update Required</span>
 			To play the media you will need to either update your browser to a recent version or updateour <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
@@ -91,6 +94,7 @@
 <p class="author">Posted by :  <a rel="author" href="">Glafouk</a></p>
 	</div><!-- .jp-audio -->
 
+</div><!-- .wrapper -->
 
 </div><!-- grid-70 -->
     <div class="nav-r grid-5">
@@ -281,7 +285,7 @@
 					})
 				}
 			});
-			$('.nav-l, .nav-r').css('line-height', $('.content').height() + 'px');
+			$('.nav-l img, .nav-r img').height($('.content').height());
 		});
 		//]]>
 		</script>
