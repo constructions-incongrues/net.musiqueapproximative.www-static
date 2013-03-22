@@ -150,19 +150,20 @@ color:#000;
   cursor: pointer;
   position: relative;
   z-index: 999;
+  width: 90%
+   top: -10px;
+  left: -1px;
+
+    background: #ccc;
+    height:27px;
 }
 .jp-seek-bar:before {
   content: " ";
   display: block;
   background: transparent;
 
-  width: 100%;
   position: relative;
-  top: -10px;
-  left: -1px;
-
-    background: #ccc;
-    height:27px;
+ 
 
 }
 .jp-play-bar {
