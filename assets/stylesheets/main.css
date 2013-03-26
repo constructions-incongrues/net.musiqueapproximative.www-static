@@ -14,7 +14,7 @@ body { background-color:#000;color:#FFF;}
 /* fonts */
 
 header h1,article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.descriptif {font-family:'Rambla',  sans-serif;}
-article h1, article h2, .title,.contributors h1,title,.contributors h2, input.submit{font-family: 'Arvo',sans-serif;}
+article h1, article h2, .title,.contributors h1,title,.contributors h2, input.submit,input.mailing,input.mailing-ok {font-family: 'Arvo',sans-serif;}
 /* ====== Text treatments ====== */
 
 article p.author {font-size:10px;font-size:1rem;text-align:right;}
@@ -68,16 +68,22 @@ article h2.hide-on-desktop {font-size:20px;font-size:2rem;}
 /* ====== Page Head, Body, and Foot ====== */
 
 .content-text,article {background-color: #FFF;}
-input.search,input.submit{background-color:#FFF;color: #000;}
+input.search,input.submit,input.mailing,input.mailing-ok {background-color:#FFF;color: #000;}
 .content{padding:0px 0 0px 0;}
 .content-text {padding-top: 0px;top:40px;position: relative}
-
+input.mailing {width:60%;}
+input.mailing,input.mailing-ok{border:0px;padding:2px;margin-top: 5px;}
 input.search {border:none;padding:3px 1px 3px 1px;margin:0 0 0 0;}
 input.submit {border:none;font-size:08px;font-size:0.8rem;margin:2px -11px 0 0; padding: 3px;}
+
 img {text-align: center;width: 30px;}
 
 .descriptif {margin:30px 0 0 0;padding-top: 20px;text-align: center;font-size: 1.2rem;}
 
+::selection {
+	background: #000;
+	color:#FFF;
+	}
 /* search */
 
 .grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
