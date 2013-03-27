@@ -95,6 +95,7 @@ img {text-align: center;width: 30px;}
 @media all and (max-width:767px) {.descriptif {text-align: left;}}
 @media all and (max-width:767px) {.contributors {margin-left: -20px;}}
 @media all and (min-width:800px) {.descriptif {text-align: center;}}
+
 .nav-l img {vertical-align: middle;}
 
 
