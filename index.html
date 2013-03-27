@@ -70,7 +70,8 @@
 
                 <div class="nav-l grid-5 hide-on-desktop">
                     <p>
-                        <a href=""><img src="assets/img/left2.svg" alt=""></a>
+                        <a href="">Précédent</a> /
+                        <a href="">Suivant</a>
                     </p>
                 </div>
 
@@ -131,11 +132,12 @@
                 </div>
 <!-- grid-70 -->
     
-       <div class="nav-r grid-5">
+       <div class="nav-r grid-5 hide-on-mobile">
                     <p>
                         <a href=""><img src="assets/img/right2.svg" alt=""></a>
                     </p>
-                </div>
+        </div>
+
 </article>
             </section>
             <div class="grid-90 prefix-5 suffix-5 infos">
@@ -516,7 +518,7 @@
                     })
                 }
             });
-            $('.nav-l img, .nav-r img').height($('.content').height());
+            $('.nav-l.hide-on-mobile img, .nav-r.hide-on-mobile img').height($('.content').height());
 
             /*
              * Hotkeys
