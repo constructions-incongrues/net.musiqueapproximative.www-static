@@ -11,6 +11,8 @@ Version: 1.0
 html { font-size:62.5%;}
 body { background-color:#000;color:#FFF;}
 
+.contributors ::selection, header ::selection,.title ::selection,.grid-90 ::selection {background-color:#FFF;color: #000}
+.content-text ::selection {background-color: #000;color:#FFF;}
 /* fonts */
 
 header h1,article p.author, article p, .all-tracks ul,.contributors p,.contributors li, p.descriptif {font-family:'Rambla',  sans-serif;}
@@ -45,13 +47,18 @@ article p a,.author a{color:#555050;background: #FFF;}
 article p a:hover { color:#000;background: #FFF; }
 .contributors a, .contributors, a.all-tracks-l,a.all-tracks-l span,.all-tracks li  {color:#BBB;background: #000;}
 a.all-tracks-l span span,a.all-tracks-l span span span { color:#FFF;background: #000;}
+a.all-tracks-l span span span span {visibility:hidden}
+a:hover.all-tracks-l span span span span {visibility:visible}
 a:hover.all-tracks-l,a:hover.all-tracks-l span,a:hover.all-tracks-l span span,a:hover.all-tracks-l span span span {background-color:#FFF;color: #000;}
-.about a {text-decoration: underline;}
+.about a {text-decoration: underline;background-color: #000;}
+.about a:hover {color:#FFF;text-decoration: underline;background-color: #000;}
+.nav-r a:hover,.nav-l a:hover {opacity: 0.7;background-color: #000;}
+
 /* ====== Heading ====== */
 
 .contributors h1, header h1 {color:#fff;background: #000;}
 header h1 {font-size:11px;font-size:1.1rem;text-transform: uppercase;margin:6px 0 10px -10px;padding:5px 0 0 0;}
-article h1 {padding:20px 0 20 0;color:#000;background: #FFF;}
+article h1 {padding:20px 0 20px 0;color:#000;background: #FFF;}
 article h1.hide-on-mobile {font-size:50px;font-size:5.0rem;}
 article h1.hide-on-desktop {font-size:25px;font-size:2.5rem;text-align: left;}
 article h2 {color:#000;opacity:0.8;background-color:#FFF;padding:10px 0 30px 0;}
@@ -59,7 +66,7 @@ article h1, article h2{ text-align: center;}
 
 article h2.hide-on-mobile {font-size:40px;font-size:4.0rem;}
 article h2.hide-on-desktop {font-size:20px;font-size:2rem;text-align: left;}
-.contributors h1 {font-size:13px;font-size:1.3rem;padding:20px 0 20px 0;}
+.contributors h1 {font-size:13px;font-size:1.3rem;padding:20px 0 20px 0;background-color: #000;}
 .contributors h2 {font-size: 10px;font-size: 1rem;color:#FFF;padding: 10px 0 10px 0;}
 
 /* ----- list ----- */
@@ -87,20 +94,13 @@ img {text-align: center;width: 30px;}
 .descriptif {margin:30px 0 0 0;padding-top: 20px;font-size: 1.2rem;}
 @media all and (max-width:767px) {.descriptif {text-align: left;}}
 @media all and (max-width:767px) {.contributors {margin-left: -20px;}}
-
 @media all and (min-width:800px) {.descriptif {text-align: center;}}
+.nav-l img {vertical-align: middle;}
+
 
 /* search */
 
 .grid-60.hide-on-desktop {margin-left:-12px;padding-bottom: 10px;text-align:left; }
 .grid-60.hide-on-mobile {padding-top: 6px;text-align: right; }
- /* ====== Default spacing ====== */
-
-/* spacing helpers */
 
 
-
-/* TEST */
-
-.nav-r a:hover,.nav-l a:hover {opacity: 0.7;background-: #000;}
-.nav-l img {vertical-align: middle;}
