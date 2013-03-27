@@ -52,7 +52,7 @@ a:hover.all-tracks-l span span span span {visibility:visible}
 a:hover.all-tracks-l,a:hover.all-tracks-l span,a:hover.all-tracks-l span span,a:hover.all-tracks-l span span span {background-color:#FFF;color: #000;}
 .about a {text-decoration: underline;background-color: #000;}
 .about a:hover {color:#FFF;text-decoration: underline;background-color: #000;}
-.nav-r a:hover,.nav-l a:hover {opacity: 0.7;background-color: #000;}
+.nav-r a:hover,.nav-l a:hover {opacity: 0.7;}
 
 /* ====== Heading ====== */
 
@@ -96,7 +96,7 @@ img {text-align: center;width: 30px;}
 @media all and (max-width:767px) {.contributors {margin-left: -20px;}}
 @media all and (min-width:800px) {.descriptif {text-align: center;}}
 
-.nav-l img {vertical-align: middle;}
+.nav-l img,.nav-r {vertical-align: middle;}
 
 
 /* search */
