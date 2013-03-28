@@ -19,8 +19,8 @@ header h1,article p.author, article p, .all-tracks ul,.contributors p,.contribut
 article h1, article h2, .title,.contributors h1,title,.contributors h2, input.submit, input.mailing, input.mailing-ok{font-family: 'Arvo',sans-serif;}
 /* ====== Text treatments ====== */
 
-article p.author {font-size:10px;font-size:1rem;text-align:right;}
-article p {color:#000;background-color:#FFF;font-size:13px;font-size:1rem;padding:20px 0px 20px 0px;}
+article p.author {font-size:10px;font-size:1rem;}
+article p {color:#000;background-color:#FFF;font-size:13px;font-size:1rem;text-align:center;padding:20px 0px 20px 0px;}
 
 @media all and (min-width:1200px) {.title {font-size:49px;font-size:4.9rem;}}
 @media all and (max-width:1050px) {.title {font-size:40px;font-size:3.5rem;}}
@@ -91,7 +91,7 @@ input.search {border:none;padding:3px 1px 3px 1px;margin:0 0 0 0;}
 input.submit {border:none;font-size:08px;font-size:0.8rem;margin:2px -11px 0 0; padding: 3px;}
 img {text-align: center;width: 30px;}
 
-.descriptif {margin:30px 0 0 0;padding-top: 20px;font-size: 1.2rem;}
+.descriptif {margin:30px 0 0 0px;padding-top: 20px;font-size: 1.2rem;max-width: 900px;}
 @media all and (max-width:767px) {.descriptif {text-align: left;}}
 @media all and (max-width:767px) {.contributors {margin-left: -20px;}}
 @media all and (min-width:800px) {.descriptif {text-align: center;}}
