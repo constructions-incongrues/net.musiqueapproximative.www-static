@@ -35,8 +35,7 @@
   -o-transition-property: background-color, border-color, color, opacity;
   -o-transition-timing-function: linear;
   -o-transition-duration: 0.15s;
-  transition-property: background-color, border-color, color, opacit
-  
+  transition-property: background-color, border-color, color, opacity;
   transition-timing-function: linear;
   transition-duration: 0.15s;
 }
@@ -77,6 +76,10 @@ text-decoration: none;}
 ----------------------------------------------- */
 
 
+
+@media all and (max-width:800px) {.jp-controls{text-align:left;}}
+@media all and (min-width:800px) {.jp-controls{text-align:center;}}
+
 .jp-controls {
 
 
@@ -84,7 +87,6 @@ text-decoration: none;}
   padding: 20px 0 0 0;
 
   z-index: 100;
-  text-align: center;
 }
 
 
